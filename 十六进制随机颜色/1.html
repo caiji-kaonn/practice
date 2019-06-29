@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+</head>
+<body>
+    
+</body>
+<script>
+// 随机求16进制的颜色;16进制:字母+数字一起,范围分别是a-f,0-9; 共6位数;
+// 先创建函数
+function color(){
+    // 列出数组;
+    var arr = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'];
+    // 在6位数范围内,随机求取随机数 ,得到这样一个值后,重新拼接成  #XXXXXX;这样的格式;
+     var he= '#';
+     for(var i=0;i<6;i++){
+         var v = Math.floor(Math.random()*arr.length);
+        he += arr[v];
+     }
+     return he;
+}
+console.log(color());
+
+
+</script>
+
+
+
+
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3</title>
+</head>
+<body>
+    
+</body>
+<script>
+// 随机求16进制的颜色;
+function color(){
+    var arr2= ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'];
+    var col='#';
+    for(i=0;i<6;i++){
+        var r = Math.floor(Math.random()*arr2.length);
+        col += arr2[r];
+    }
+    return col;
+}
+console.log(color());
+
+</script>
+</html>

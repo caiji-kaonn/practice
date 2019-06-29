@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // 随机求rgba颜色
+    // 1.rgb 的随机范围是 (0,255); ;
+    // 2.利用随机的函数,把这个函数调入 rbga的函数中
+
+    // 先列出随机的函数
+    function suiji(n, m) {
+            var y = Math.floor(Math.random() * (m - n + 1) + n);
+            return y;
+        
+    };
+
+
+    // 列出rgba的函数
+    function color(){
+        var r = suiji(0, 255);
+        var g = suiji(0, 255);
+        var b = suiji(0, 255);
+        var a = Math.floor(Math.random()*100)/100;
+        return 'rgba('+ r+ ','+g+ ','+b+ ','+a+')';
+    }
+
+    console.log(color());
+</script>
+
+</html>

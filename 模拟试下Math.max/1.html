@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+</head>
+<body>
+    
+</body>
+<script>
+// 求任意个数字的最大值
+// 相当于在一堆数字里面求出最大值
+function fn(){
+    var w= arguments[0];
+    for(var i=0;i<arguments.length;i++){
+        if(w<arguments[i]){
+            w = arguments[i];
+        }
+    }
+    return w;
+}
+console.log(fn(65,78,87,9876));
+console.log(Math.max(12,342,1223,8776));
+</script>
+</html>

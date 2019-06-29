@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+</head>
+<body>
+    
+</body>
+<script>
+// 随机求16进制的颜色;
+// 先创建颜色的函数
+function color(){
+    // 列出字母a-f,数字0-9的数组
+    var arr1 =['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'];
+    // 由于16进制的格式是 #xxxxxx
+    var co ='#';
+    // 且是6个随机数,即从0开始,到6结束的循环
+    for(var i=0;i<6;i++){
+        var y = Math.floor(Math.random()*arr1.length);
+        co += arr1[y];
+    }
+    return co;
+}
+console.log(color());
+
+
+
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//随机求rgba颜色
+// 即随机求  0-255 范围
+
+// 先随机求 0-255 的函数,可直接 return 公式,这样就不需要重新赋值,其实赋值了一个公式 也没什么用,后面都不需要这个值
+function fn(n,m){
+   return Math.floor(Math.random()*(m-n+1)+n);
+};
+
+// 列出颜色的函数,然后分别把 r g b a 各个随机值,调用 求随机值的函数,再填上 实参;
+function color(){
+    var r =  fn(0,255);
+    var g  =  fn(0,255);
+    var b =  fn(0,255);
+    var a = Math.floor(Math.random()*100)/100;
+    return 'rgba('+ r+ ',' +g+ ',' +b+ ',' +a +')';
+    
+}
+console.log(color());
+
+
+
+
+</script>
+</html>
